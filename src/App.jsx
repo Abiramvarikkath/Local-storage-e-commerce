@@ -12,7 +12,7 @@ function App() {
   return (
     <>
           <BrowserRouter>
-       <Nav/>
+       <Nav setSearch={setSearch}/>
         <Routes>
           <Route path='/' element={<Fetch search={search} />} />
           <Route path='/details/:id' element={<ProductDetails/>}/>
